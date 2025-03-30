@@ -1,5 +1,14 @@
+import AnnouncmentBar from "./HeaderComponents/AnnouncmentBar";
+import CopyRight from "./HeaderComponents/CopyRight";
+
 const Header = () => {
-  return <div>Header</div>;
+  return (
+    <>
+      <CopyRight />
+      <AnnouncmentBar />
+      Header
+    </>
+  );
 };
 
 export default Header;
