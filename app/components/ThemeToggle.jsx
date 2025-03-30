@@ -1,8 +1,10 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { gsap } from "gsap";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState("dark");
+  const toggleRef = useRef(null);
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme") || "dark";
@@ -20,12 +22,22 @@ export default function ThemeToggle() {
       "light-theme",
       newTheme === "light"
     );
-    localStorage.setItem("theme", newTheme); 
+    localStorage.setItem("theme", newTheme);
+
+    gsap.to(toggleRef.current, {
+      x: newTheme === "light" ? 26 : 0, 
+      duration: 0.3,
+      ease: "power2.inOut",
+    });
   };
 
   return (
-    <button onClick={toggleTheme} className="theme-toggle">
-      {theme === "dark" ? "🌞 Light Mode" : "🌙 Dark Mode"}
-    </button>
+    <div className="toggle-container" onClick={toggleTheme}>
+      <div className="toggle-track">
+        <div ref={toggleRef} className="toggle-button">
+          {theme === "dark" ? "🌙" : "☀️"}
+        </div>
+      </div>
+    </div>
   );
 }

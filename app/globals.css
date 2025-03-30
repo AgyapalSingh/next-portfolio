@@ -20,3 +20,47 @@ a:hover,
 button:hover {
   color: var(--hover-color);
 }
+
+
+
+/* Theme Toggle Switch */
+.toggle-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: fixed;
+  top: 10px;
+  right: 30px;
+}
+
+.toggle-track {
+  width: 50px;
+  height: 24px;
+  background: #333;
+  border-radius: 15px;
+  position: relative;
+  padding: 2px;
+  transition: background 0.3s;
+  align-items: center;
+}
+
+.light-theme .toggle-track {
+  background: #cfcfcf;
+}
+
+.toggle-button {
+  width: 24px;
+  height: 24px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  transition: transform 0.3s;
+  color: #000000;
+}
