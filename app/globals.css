@@ -1,13 +1,13 @@
 :root {
   --bg-color: #000000;
   --text-color: #ffffff;
-  --hover-color: #d3d3d3;
+  --hover-color: #bababa;
 }
 
 .light-theme {
   --bg-color: #ffffff;
   --text-color: #000000;
-  --hover-color: #555555;
+  --hover-color: #4b4b4b;
 }
 
 * {
@@ -36,7 +36,7 @@ button:hover {
   cursor: pointer;
   position: fixed;
   top: 5px;
-  right: 30px;
+  right: 10px;
 }
 
 .toggle-track {
@@ -86,4 +86,14 @@ button:hover {
 .ag-copy-right p {
   font-size: 12px;
   color: var(--hover-color);
+}
+
+@media screen and (max-width: 768px) {
+  .ag-copy-right {
+    flex-direction: column;
+    align-items: start;
+    font-family: var(--font-montserrat), sans-serif;
+    height: 45px;
+    padding-left: 5px;
+  }
 }

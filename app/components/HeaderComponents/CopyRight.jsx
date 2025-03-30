@@ -16,7 +16,7 @@ const CopyRight = () => {
   return (
     <div className="ag-copy-right">
       <p>© AGYAPAL SINGH. All rights reserved</p>
-      <p>© {new Date().getFullYear()}</p>
+
       <p>
         {dateTime.toLocaleDateString()} | {dateTime.toLocaleTimeString()}
       </p>
