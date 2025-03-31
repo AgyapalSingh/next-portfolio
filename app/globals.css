@@ -2,12 +2,42 @@
   --bg-color: #000000;
   --text-color: #ffffff;
   --hover-color: #bababa;
+  --bg-gradient: radial-gradient(
+    circle,
+    #000000,
+    #0c0c0c,
+    #151515,
+    #1c1c1c,
+    #232323,
+    #252525,
+    #282828,
+    #2a2a2a,
+    #292929,
+    #272727,
+    #262626,
+    #252525
+  );
 }
 
 .light-theme {
   --bg-color: #ffffff;
   --text-color: #000000;
   --hover-color: #4b4b4b;
+  --bg-gradient: radial-gradient(
+    circle,
+    #ffffff,
+    #fcfcfc,
+    #f8f8f8,
+    #f5f5f5,
+    #f2f2f2,
+    #f1f1f1,
+    #f0f0f0,
+    #efefef,
+    #f0f0f0,
+    #f1f1f1,
+    #f1f1f1,
+    #f2f2f2
+  );
 }
 
 * {
@@ -26,8 +56,6 @@ a:hover,
 button:hover {
   color: var(--hover-color);
 }
-
-
 
 /* Theme Toggle Switch */
 .toggle-container {
@@ -67,12 +95,12 @@ button:hover {
   transition: transform 0.3s;
 }
 
-.toggle-dark-icon{
+.toggle-dark-icon {
   font-size: 18px;
   color: var(--bg-color);
 }
 
-.toggle-light-icon{
+.toggle-light-icon {
   font-size: 18px;
   color: var(--bg-color);
 }
@@ -101,4 +129,98 @@ button:hover {
     height: 45px;
     padding-left: 5px;
   }
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* NAVBAR */
+
+/* Navbar Styles */
+nav {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1000;
+  height: 80px;
+  font-family: var(--font-montserrat);
+}
+.ag-navbar-div {
+  width: 100%;
+  color: var(--text-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  height: 100%;
+  max-width: 1200px;
+  background-image: var(--bg-gradient);
+  padding: 0 50px;
+  border-radius: 5px;
+}
+
+.ag-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.ag-nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.ag-nav-links li {
+  display: inline-block;
+}
+
+.ag-nav-links button {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+  font-family: var(--font-montserrat);
+}
+
+.ag-nav-links button:hover,
+.ag-nav-links .active {
+  color: #ff8800;
+}
+
+.ag-nav-contact button {
+  outline: none;
+  width: 100px;
+  height: 30px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 2px solid var(--text-color);
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 50px;
 }
