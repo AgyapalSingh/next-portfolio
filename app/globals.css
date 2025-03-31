@@ -81,13 +81,13 @@ button:hover {
 }
 
 .toggle-button {
-  width: 28px;
+  width: 29px;
   height: 29px;
   background: var(--text-color);
   border-radius: 50%;
   position: absolute;
   top: -1px;
-  left: 0px;
+  left: -1px;
   display: flex;
   align-items: center;
   justify-content: center;

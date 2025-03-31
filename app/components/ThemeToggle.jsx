@@ -31,7 +31,7 @@ export default function ThemeToggle() {
     localStorage.setItem("theme", newTheme);
 
     gsap.to(toggleRef.current, {
-      x: newTheme === "light" ? 16 : 0,
+      x: newTheme === "light" ? 18 : 0,
       duration: 0.3,
       ease: "power2.inOut",
     });
