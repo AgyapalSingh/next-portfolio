@@ -1,11 +1,12 @@
-"use client"; 
-
+"use client";
 import { useState, useEffect } from "react";
 
 const CopyRight = () => {
-  const [dateTime, setDateTime] = useState(new Date());
+  const [dateTime, setDateTime] = useState(null);
 
   useEffect(() => {
+    setDateTime(new Date());
+
     const interval = setInterval(() => {
       setDateTime(new Date());
     }, 1000);
@@ -18,7 +19,9 @@ const CopyRight = () => {
       <p>© AGYAPAL SINGH. All rights reserved</p>
 
       <p>
-        {dateTime.toLocaleDateString()} | {dateTime.toLocaleTimeString()}
+        {dateTime
+          ? `${dateTime.toLocaleDateString()} | ${dateTime.toLocaleTimeString()}`
+          : "Loading..."}
       </p>
     </div>
   );
