@@ -82,10 +82,10 @@ const Navbar = () => {
       >
         <ul className="ag-mobile-nav-links">
           {["about", "experience", "projects"].map((item) => (
-            <li key={item}>
+            <li key={item} onClick={toggleMobileMenu}>
               <button
                 className={activeSection === item ? "active" : ""}
-                onClick={() => scrollToSection(item)}
+                onClick={() => scrollToSection(item)} 
               >
                 {item.charAt(0).toUpperCase() + item.slice(1)}
               </button>
