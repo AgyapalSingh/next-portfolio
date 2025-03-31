@@ -1,4 +1,4 @@
-"use client"; // Needed for Next.js (App Router)
+"use client"; 
 
 import { useState, useEffect } from "react";
 
