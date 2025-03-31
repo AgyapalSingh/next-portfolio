@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
+import { MdLightMode } from "react-icons/md";
+import { MdDarkMode } from "react-icons/md";
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState("dark");
@@ -25,7 +27,7 @@ export default function ThemeToggle() {
     localStorage.setItem("theme", newTheme);
 
     gsap.to(toggleRef.current, {
-      x: newTheme === "light" ? 19 : 0,
+      x: newTheme === "light" ? 16 : 0,
       duration: 0.3,
       ease: "power2.inOut",
     });
@@ -35,7 +37,11 @@ export default function ThemeToggle() {
     <div className="toggle-container" onClick={toggleTheme}>
       <div className="toggle-track">
         <div ref={toggleRef} className="toggle-button">
-          {theme === "dark" ? "🌙" : "☀️"}
+          {theme === "dark" ? (
+            <MdDarkMode className="toggle-dark-icon" />
+          ) : (
+            <MdLightMode className="toggle-light-icon" />
+          )}
         </div>
       </div>
     </div>
