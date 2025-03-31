@@ -92,6 +92,10 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
+
+        <div className="ag-mobile-nav-contact">
+          <button onClick={() => scrollToSection("contact")}>Contact</button>
+        </div>
       </div>
     </nav>
   );

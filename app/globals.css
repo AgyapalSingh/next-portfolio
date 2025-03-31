@@ -82,7 +82,7 @@ button:hover {
 
 .toggle-button {
   width: 28px;
-  height: 26px;
+  height: 28px;
   background: var(--text-color);
   border-radius: 50%;
   position: absolute;
@@ -232,23 +232,21 @@ nav {
   top: 120px;
   left: 0;
   background: var(--bg-gradient);
-  height: 95vh;
+  height: 100vh;
   width: 100%;
   overflow: hidden;
   transition: transform 0.3s ease-in-out;
   z-index: 99;
   transform: translateX(100%);
+  padding: 0 2%;
+  display: flex;
+  flex-direction: column;
+  gap: 20vh;
 }
 .nav-icon{
   font-size: 24px;
 }
 
-/* .nav-icon-close{
-  position: fixed;
-  top: 10px;
-  right: 200px;
-  z-index: 999;
-} */
 
 .ag-mobile-navbar.mobileDrawerOpen {
   transform: translateX(0%);
@@ -261,6 +259,42 @@ nav {
   .ag-nav-contact {
     display: none;
   }
+}
+
+.ag-mobile-nav-links{
+  width: 100%;
+}
+
+.ag-mobile-nav-links li{
+  list-style: none;
+  height: 100px;
+  margin-bottom: 5px;
+}
+
+.ag-mobile-nav-links li button{
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  font-family: var(--font-montserrat);
+  font-size: 14px;
+  outline: none;
+  border: none;
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+.ag-mobile-nav-contact button {
+  outline: none;
+  width: 100px;
+  height: 30px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-montserrat);
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 2px solid var(--text-color);
 }
 
 .section {
