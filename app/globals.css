@@ -74,7 +74,7 @@ button:hover {
 
 .toggle-light-icon{
   font-size: 18px;
-  color: var(--text-color);
+  color: var(--bg-color);
 }
 
 /* Components */
