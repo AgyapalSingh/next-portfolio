@@ -8,14 +8,12 @@ export default function ThemeToggle() {
   const toggleRef = useRef(null);
 
   useEffect(() => {
-    // Get theme from localStorage or default to "dark"
     const savedTheme = localStorage.getItem("theme") || "dark";
     setTheme(savedTheme);
-    
-    // Apply theme class to <html>
-    document.documentElement.classList.toggle("light-theme", savedTheme === "light");
-
-    // Animate toggle button to correct position based on saved theme
+    document.documentElement.classList.toggle(
+      "light-theme",
+      savedTheme === "light"
+    );
     gsap.set(toggleRef.current, {
       x: savedTheme === "light" ? 16 : 0,
     });
@@ -25,13 +23,13 @@ export default function ThemeToggle() {
     const newTheme = theme === "dark" ? "light" : "dark";
     setTheme(newTheme);
 
-    // Apply theme class to <html>
-    document.documentElement.classList.toggle("light-theme", newTheme === "light");
-    
-    // Save to localStorage
+    document.documentElement.classList.toggle(
+      "light-theme",
+      newTheme === "light"
+    );
+
     localStorage.setItem("theme", newTheme);
 
-    // Animate toggle button smoothly
     gsap.to(toggleRef.current, {
       x: newTheme === "light" ? 16 : 0,
       duration: 0.3,
@@ -46,7 +44,10 @@ export default function ThemeToggle() {
           {theme === "dark" ? (
             <MdDarkMode className="toggle-dark-icon" />
           ) : (
-            <MdLightMode className="toggle-light-icon" style={{ color: "white" }} />
+            <MdLightMode
+              className="toggle-light-icon"
+              style={{ color: "white" }}
+            />
           )}
         </div>
       </div>
