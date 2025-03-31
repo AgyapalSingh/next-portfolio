@@ -93,7 +93,7 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="ag-mobile-nav-contact">
+        <div className="ag-mobile-nav-contact" onClick={toggleMobileMenu}>
           <button onClick={() => scrollToSection("contact")}>Contact</button>
         </div>
       </div>

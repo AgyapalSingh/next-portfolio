@@ -82,11 +82,11 @@ button:hover {
 
 .toggle-button {
   width: 28px;
-  height: 28px;
+  height: 29px;
   background: var(--text-color);
   border-radius: 50%;
   position: absolute;
-  top: 0px;
+  top: -1px;
   left: 0px;
   display: flex;
   align-items: center;
