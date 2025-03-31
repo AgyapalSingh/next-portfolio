@@ -65,7 +65,7 @@ button:hover {
   position: fixed;
   top: 5px;
   right: 10px;
-  z-index: 1000;
+  z-index: 9;
 }
 
 .toggle-track {
@@ -163,7 +163,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   height: 100%;
   max-width: 1200px;
@@ -214,6 +213,54 @@ nav {
   font-size: 16px;
   border-radius: 15px;
   border: 2px solid var(--text-color);
+}
+
+/* Mobile Drawer */
+
+
+@media screen and (min-width: 768px) {
+  .ag-nav-hamburger {
+    display: none;
+  }
+  .ag-mobile-navbar {
+    display: none;
+  }
+}
+
+.ag-mobile-navbar{
+  position: fixed;
+  top: 120px;
+  left: 0;
+  background: var(--bg-gradient);
+  height: 95vh;
+  width: 100%;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+  z-index: 99;
+  transform: translateX(100%);
+}
+.nav-icon{
+  font-size: 24px;
+}
+
+/* .nav-icon-close{
+  position: fixed;
+  top: 10px;
+  right: 200px;
+  z-index: 999;
+} */
+
+.ag-mobile-navbar.mobileDrawerOpen {
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 769px) {
+  .ag-nav-links {
+    display: none;
+  }
+  .ag-nav-contact {
+    display: none;
+  }
 }
 
 .section {

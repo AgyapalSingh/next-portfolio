@@ -1,8 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
+import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
+import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("about");
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -57,6 +65,33 @@ const Navbar = () => {
         <div className="ag-nav-contact">
           <button onClick={() => scrollToSection("contact")}>Contact</button>
         </div>
+
+        <div className="ag-nav-hamburger" onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? (
+            <IoMdClose className=" nav-icon nav-icon-close" />
+          ) : (
+            <HiOutlineBars3CenterLeft className="nav-icon" />
+          )}
+        </div>
+      </div>
+
+      <div
+        className={`ag-mobile-navbar  ${
+          isMobileMenuOpen ? "mobileDrawerOpen" : ""
+        }`}
+      >
+        <ul className="ag-mobile-nav-links">
+          {["about", "experience", "projects"].map((item) => (
+            <li key={item}>
+              <button
+                className={activeSection === item ? "active" : ""}
+                onClick={() => scrollToSection(item)}
+              >
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
     </nav>
   );
