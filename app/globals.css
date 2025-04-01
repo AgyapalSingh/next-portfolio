@@ -285,6 +285,11 @@ nav {
 }
 
 
+.nav-link-icon{
+  color: var(--text-color);
+  font-size: 22px;
+}
+
 .ag-mobile-nav-contact button {
   outline: none;
   width: 100px;

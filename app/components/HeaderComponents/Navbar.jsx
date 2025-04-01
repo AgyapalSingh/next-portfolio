@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { IoMdClose } from "react-icons/io";
+import { LuExternalLink } from "react-icons/lu";
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState("about");
@@ -57,7 +58,7 @@ const Navbar = () => {
                 className={activeSection === item ? "active" : ""}
                 onClick={() => scrollToSection(item)}
               >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
+                {item.charAt(0).toUpperCase() + item.slice(1)} 
               </button>
             </li>
           ))}
@@ -87,7 +88,7 @@ const Navbar = () => {
                 className={activeSection === item ? "active" : ""}
                 onClick={() => scrollToSection(item)} 
               >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
+                {item.charAt(0).toUpperCase() + item.slice(1)}    <LuExternalLink className="nav-link-icon" />
               </button>
             </li>
           ))}
