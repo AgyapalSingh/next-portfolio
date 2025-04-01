@@ -49,7 +49,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="ag-navbar-div">
-        <h1 className="ag-logo">W</h1>
+        <h1 className="ag-logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>W</h1>
         <ul className="ag-nav-links">
           {["about", "experience", "projects"].map((item) => (
             <li key={item}>
