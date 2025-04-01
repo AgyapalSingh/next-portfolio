@@ -115,6 +115,7 @@ button:hover {
   justify-content: space-around;
   font-family: var(--font-montserrat), sans-serif;
   height: 25px;
+  background-color: var(--bg-color);
 }
 
 .ag-copy-right p {
