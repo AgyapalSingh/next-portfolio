@@ -1,7 +1,7 @@
 :root {
   --bg-color: #000000;
   --text-color: #ffffff;
-  --hover-color: #696969;
+  --hover-color: #525252;
   --bg-gradient: radial-gradient(
     circle,
     #000000,
@@ -22,7 +22,7 @@
 .light-theme {
   --bg-color: #ffffff;
   --text-color: #000000;
-  --hover-color: #bdbdbd;
+  --hover-color: #d6d6d6;
   --bg-gradient: radial-gradient(
     circle,
     #ffffff,
