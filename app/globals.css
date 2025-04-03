@@ -354,9 +354,9 @@ nav {
   transition: border-radius 0.4s ease-in-out;
 }
 
-.ag-about-info-img:hover {
+/* .ag-about-info-img:hover {
   border-radius: 40px 40px 40px 40px;
-}
+} */
 
 .ag-about-info-img img {
   width: 100%;
@@ -365,9 +365,9 @@ nav {
   transition: transform 1s ease-in-out;
 }
 
-.ag-about-info-img:hover img {
+/* .ag-about-info-img:hover img {
   transform: scale(1.2);
-}
+} */
 
 .ag-about-info-text {
   height: 50%;
