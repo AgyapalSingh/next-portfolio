@@ -60,7 +60,7 @@ const About = () => {
         });
 
         gsap.to(imageRef.current, {
-          scale: 1.2, 
+          scale: 1.5, 
           scrollTrigger: {
             trigger: imageRef.current,
             start: "top 65%",
