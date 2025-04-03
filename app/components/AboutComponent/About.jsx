@@ -49,11 +49,20 @@ const About = () => {
       );
 
       if (window.innerWidth <= 768) {
-        gsap.to([imagedivRef.current, imageRef.current], {
-          borderRadius: "40px 40px 40px 40px",
-          scale: 1.2,
+        gsap.to(imagedivRef.current, {
+          borderRadius: "20px 20px 20px 20px", 
           scrollTrigger: {
             trigger: imagedivRef.current,
+            start: "top 65%",
+            end: "top 45%",
+            scrub: 1,
+          },
+        });
+
+        gsap.to(imageRef.current, {
+          scale: 1.2, 
+          scrollTrigger: {
+            trigger: imageRef.current,
             start: "top 65%",
             end: "top 45%",
             scrub: 1,
