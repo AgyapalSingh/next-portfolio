@@ -309,7 +309,7 @@ nav {
 .ag-about-container {
   display: flex;
   align-items: center;
-  height: 80vh;
+  min-height: 85vh;
   margin-top: 120px;
   overflow: hidden;
 }
@@ -348,14 +348,14 @@ nav {
 .ag-about-info-img {
   height: 45%;
   width: 90%;
-  margin-top: 5%;
-  border-radius: 80px 10px 80px 10px;
+  margin-top: 2%;
+  border-radius: 100px 10px 100px 10px;
   overflow: hidden;
   transition: border-radius 0.4s ease-in-out;
 }
 
 .ag-about-info-img:hover {
-  border-radius: 10px 80px 10px 80px;
+  border-radius: 40px 40px 40px 40px;
 }
 
 .ag-about-info-img img {
@@ -366,11 +366,10 @@ nav {
 }
 
 .ag-about-info-img:hover img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
-
-.ag-about-info-text{
+.ag-about-info-text {
   height: 50%;
   width: 100%;
   display: flex;
@@ -382,4 +381,23 @@ nav {
   font-family: var(--font-poppins);
   letter-spacing: 1px;
   font-size: 18px;
+}
+
+@media screen and (max-width: 769px) {
+  .ag-about-container {
+    flex-direction: column;
+  }
+
+  .ag-about-text {
+    width: 100%;
+  }
+
+  .ag-about-info {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .ag-about-info-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
