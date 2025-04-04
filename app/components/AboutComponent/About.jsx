@@ -41,8 +41,8 @@ const About = () => {
           stagger: 0.1,
           scrollTrigger: {
             trigger: textRef.current,
-            start: "top 80%",
-            end: "top 30%",
+            start: "top 90%",
+            end: "top 40%",
             scrub: true,
           },
         }
