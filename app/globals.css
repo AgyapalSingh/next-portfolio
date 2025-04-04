@@ -1,6 +1,7 @@
 :root {
   --bg-color: #000000;
   --text-color: #ffffff;
+  --tex-color-secondary: #acacac;
   --hover-color: #525252;
   --bg-gradient: radial-gradient(
     circle,
@@ -22,6 +23,7 @@
 .light-theme {
   --bg-color: #ffffff;
   --text-color: #000000;
+  --tex-color-secondary: #555555;
   --hover-color: #d6d6d6;
   --bg-gradient: radial-gradient(
     circle,
@@ -120,7 +122,7 @@ button:hover {
 
 .ag-copy-right p {
   font-size: 12px;
-  color: var(--hover-color);
+  color: var(--tex-color-secondary);
 }
 
 @media screen and (max-width: 768px) {
@@ -166,7 +168,6 @@ nav {
   align-items: center;
   z-index: 1000;
   height: 100%;
-  /* max-width: 1200px; */
   background-image: var(--bg-gradient);
   padding: 0 50px;
   border-radius: 5px;
@@ -194,7 +195,6 @@ nav {
   font-size: 16px;
   cursor: pointer;
   transition: color 0.3s ease;
-
   font-family: var(--font-montserrat);
 }
 
@@ -330,7 +330,7 @@ nav {
 }
 
 .ag-about-text-2 {
-  color: var(--hover-color);
+  color: var(--tex-color-secondary);
 }
 
 .ag-about-text-3 {
@@ -349,7 +349,7 @@ nav {
   height: 45%;
   width: 90%;
   margin-top: 2%;
-  border-radius: 100px 10px 100px 10px;
+  border-radius: 300px 100px 10px 10px;
   overflow: hidden;
 }
 
