@@ -54,6 +54,21 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
+::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  border: none !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  cursor: pointer;
+}
+
+
 a:hover,
 button:hover {
   color: var(--hover-color);
