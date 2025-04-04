@@ -301,7 +301,7 @@ nav {
 }
 
 .section {
-  min-height: 100vh;
+  min-height: 20vh;
 }
 
 /* About Section */
@@ -351,23 +351,13 @@ nav {
   margin-top: 2%;
   border-radius: 100px 10px 100px 10px;
   overflow: hidden;
-  /* transition: border-radius 0.4s ease-in-out; */
 }
-
-/* .ag-about-info-img:hover {
-  border-radius: 40px 40px 40px 40px;
-} */
 
 .ag-about-info-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* transition: transform 1s ease-in-out; */
 }
-
-/* .ag-about-info-img:hover img {
-  transform: scale(1.2);
-} */
 
 .ag-about-info-text {
   height: 50%;
@@ -404,5 +394,44 @@ nav {
   .ag-about-info-img {
     width: 100%;
     margin-bottom: 20px;
+  }
+}
+
+
+
+/* Services */
+
+.ag-service-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 80px;
+  width: 100%;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  height: 100%;
+  padding: 0 20px; 
+}
+
+.ag-service {
+  width: 100%;
+  height: 300px;
+}
+
+.service-icon {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  
+  .ag-service-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .ag-service {
+    width: 100%;
+    height: auto
   }
 }
