@@ -35,7 +35,7 @@ const Service = () => {
             scrollTrigger: {
               trigger: containerRef.current,
               start: "top 65%",
-              end: "top 5%",
+              end: "top -20%",
               scrub: true,
             },
           }
@@ -52,7 +52,7 @@ const Service = () => {
             scrollTrigger: {
               trigger: containerRef.current,
               start: "top 65%",
-              end: "top 10%",
+              end: "top -20%",
               scrub: true,
             },
           }
