@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
-import { FaWordpress, FaReact, FaShopify,FaNodeJs } from "react-icons/fa6";
+import { FaWordpress, FaReact, FaShopify, FaNodeJs } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { DiGoogleAnalytics } from "react-icons/di";
@@ -28,14 +28,14 @@ const Service = () => {
       "(min-width: 769px)": function () {
         gsap.fromTo(
           icons,
-          { color: "var(--hover-color)" },
+          { color: "var(--tex-color-secondary)" },
           {
-            color: "var(--text-color)",
+            color: "var(--bg-color)",
             stagger: 0.1,
             scrollTrigger: {
               trigger: containerRef.current,
-              start: "top 75%",
-              end: "top 10%",
+              start: "top 65%",
+              end: "top 5%",
               scrub: true,
             },
           }
@@ -45,14 +45,14 @@ const Service = () => {
       "(max-width: 768px)": function () {
         gsap.fromTo(
           icons,
-          { color: "var(--hover-color)" },
+          { color: "var(--tex-color-secondary)" },
           {
-            color: "var(--text-color)",
+            color: "var(--bg-color)",
             stagger: 0.2,
             scrollTrigger: {
               trigger: containerRef.current,
-              start: "top 90%",
-              end: "top 40%",
+              start: "top 65%",
+              end: "top 10%",
               scrub: true,
             },
           }
@@ -63,68 +63,66 @@ const Service = () => {
 
   return (
     <div className="ag-service-container" ref={containerRef}>
-      <div className="ag-service">
-        <AiOutlineHtml5 className="service-icon" />
-      </div>
-      <div className="ag-service">
-        <FaCss3 className="service-icon" />
-      </div>
-      <div className="ag-service">
-        <FaNodeJs className="service-icon" />
-      </div>
-      <div className="ag-service">
-        <SiExpress className="service-icon" />
+      <div className="ag-services-title">
+        <h1>What I think we knows !</h1>
       </div>
 
-      <div className="ag-service">
-        <SiMongodb className="service-icon" />
-      </div>
-      <div className="ag-service">
-        <RiNextjsFill className="service-icon" />
-      </div>
+      <div className="ag-all-services">
+        <div className="ag-service">
+          <AiOutlineHtml5 className="service-icon" />
+        </div>
+        <div className="ag-service">
+          <FaCss3 className="service-icon" />
+        </div>
+        <div className="ag-service">
+          <FaNodeJs className="service-icon" />
+        </div>
+        <div className="ag-service">
+          <SiExpress className="service-icon" />
+        </div>
 
-      <div className="ag-service">
-        <FaReact className="service-icon" />
-      </div>
-      <div className="ag-service">
-        <FaWordpress className="service-icon" />
-      </div>
-      <div className="ag-service">
-        <FaShopify className="service-icon" />
-      </div>
-      
-      <div className="ag-service">
-        <DiGoogleAnalytics className="service-icon" />
-      </div>
-      
-     
+        <div className="ag-service">
+          <SiMongodb className="service-icon" />
+        </div>
+        <div className="ag-service">
+          <RiNextjsFill className="service-icon" />
+        </div>
 
-      
+        <div className="ag-service">
+          <FaReact className="service-icon" />
+        </div>
+        <div className="ag-service">
+          <FaWordpress className="service-icon" />
+        </div>
+        <div className="ag-service">
+          <FaShopify className="service-icon" />
+        </div>
 
-      <div className="ag-service">
-        <VscGithubInverted className="service-icon" />
-      </div>
+        <div className="ag-service">
+          <DiGoogleAnalytics className="service-icon" />
+        </div>
 
-      <div className="ag-service">
-        <FaGitAlt className="service-icon" />
-      </div>
+        <div className="ag-service">
+          <VscGithubInverted className="service-icon" />
+        </div>
 
-      
+        <div className="ag-service">
+          <FaGitAlt className="service-icon" />
+        </div>
 
-      
+        <div className="ag-service">
+          <SiHostinger className="service-icon" />
+        </div>
 
-      <div className="ag-service">
-        <SiHostinger className="service-icon" />
-      </div>
-
-      <div className="ag-service">
-        <IoLogoVercel className="service-icon" />
-      </div>
-      <div className="ag-service">
-        <SiGodaddy className="service-icon" />
-      </div>
-      <div className="ag-service">
-        <FaAws className="service-icon" />
+        <div className="ag-service">
+          <IoLogoVercel className="service-icon" />
+        </div>
+        <div className="ag-service">
+          <SiGodaddy className="service-icon" />
+        </div>
+        <div className="ag-service">
+          <FaAws className="service-icon" />
+        </div>
       </div>
     </div>
   );
