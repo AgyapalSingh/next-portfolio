@@ -602,6 +602,7 @@ nav {
   width: 30%;
   position: sticky;
   top: 150px;
+  z-index: 1;
 }
 
 .ag-experience-title div {
