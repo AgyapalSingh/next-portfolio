@@ -15,7 +15,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about","service", "experience", "projects", "contact"];
+      const sections = ["about","skills", "experience", "projects", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -52,7 +52,7 @@ const Navbar = () => {
       <div className="ag-navbar-div">
         <h1 className="ag-logo" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>W</h1>
         <ul className="ag-nav-links">
-          {["about", "service", "experience", "projects"].map((item) => (
+          {["about", "skills", "experience", "projects"].map((item) => (
             <li key={item}>
               <button
                 className={activeSection === item ? "active" : ""}
@@ -82,7 +82,7 @@ const Navbar = () => {
         }`}
       >
         <ul className="ag-mobile-nav-links">
-          {["about", "service", "experience", "projects"].map((item) => (
+          {["about", "skills", "experience", "projects"].map((item) => (
             <li key={item} onClick={toggleMobileMenu}>
               <button
                 className={activeSection === item ? "active" : ""}

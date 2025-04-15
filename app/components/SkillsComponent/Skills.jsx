@@ -18,11 +18,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const Service = () => {
+const Skills = () => {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const icons = gsap.utils.toArray(".service-icon");
+    const icons = gsap.utils.toArray(".skills-icon");
 
     ScrollTrigger.matchMedia({
       "(min-width: 769px)": function () {
@@ -62,84 +62,84 @@ const Service = () => {
   }, []);
 
   return (
-    <div className="ag-service-container" ref={containerRef}>
-      <div className="ag-services-title">
+    <div className="ag-skills-container" ref={containerRef}>
+      <div className="ag-skills-title">
         <h1>What I think we knows !</h1>
       </div>
 
-      <div className="ag-all-services">
-        <div className="ag-service">
-          <AiOutlineHtml5 className="service-icon" />
+      <div className="ag-all-skills">
+        <div className="ag-skills">
+          <AiOutlineHtml5 className="skills-icon" />
           <span>HTML</span>
         </div>
 
-        <div className="ag-service">
-          <FaCss3 className="service-icon" />
+        <div className="ag-skills">
+          <FaCss3 className="skills-icon" />
           <span>CSS</span>
         </div>
 
-        <div className="ag-service">
-          <FaNodeJs className="service-icon" />
+        <div className="ag-skills">
+          <FaNodeJs className="skills-icon" />
           <span>Node.js</span>
         </div>
 
-        <div className="ag-service">
-          <SiExpress className="service-icon" />
+        <div className="ag-skills">
+          <SiExpress className="skills-icon" />
           <span>Express.js</span>
         </div>
 
-        <div className="ag-service">
-          <SiMongodb className="service-icon" />
+        <div className="ag-skills">
+          <SiMongodb className="skills-icon" />
           <span>MongoDB</span>
         </div>
-        <div className="ag-service">
-          <RiNextjsFill className="service-icon" />
+        <div className="ag-skills">
+          <RiNextjsFill className="skills-icon" />
           <span>Next.js</span>
         </div>
 
-        <div className="ag-service">
-          <FaReact className="service-icon" />
+        <div className="ag-skills">
+          <FaReact className="skills-icon" />
           <span>React</span>
         </div>
-        <div className="ag-service">
-          <FaWordpress className="service-icon" />
+        <div className="ag-skills">
+          <FaWordpress className="skills-icon" />
           <span>WordPress</span>
         </div>
-        <div className="ag-service">
-          <FaShopify className="service-icon" />
+        <div className="ag-skills">
+          <FaShopify className="skills-icon" />
           <span>Shopify</span>
         </div>
 
-        <div className="ag-service">
-          <DiGoogleAnalytics className="service-icon" />
+        <div className="ag-skills">
+          <DiGoogleAnalytics className="skills-icon" />
           <span>Google Analytics</span>
         </div>
 
-        <div className="ag-service">
-          <FaGitAlt className="service-icon" />
+        <div className="ag-skills">
+          <FaGitAlt className="skills-icon" />
           <span>Git</span>
         </div>
 
-        <div className="ag-service">
-          <VscGithubInverted className="service-icon" />
+        <div className="ag-skills">
+          <VscGithubInverted className="skills-icon" />
           <span>GitHub</span>
         </div>
 
-        <div className="ag-service">
-          <SiHostinger className="service-icon" />
+        <div className="ag-skills">
+          <SiHostinger className="skills-icon" />
           <span>Hostinger</span>
         </div>
 
-        <div className="ag-service">
-          <IoLogoVercel className="service-icon" />
+        <div className="ag-skills">
+          <IoLogoVercel className="skills-icon" />
           <span>Vercel</span>
         </div>
-        <div className="ag-service">
-          <SiGodaddy className="service-icon" />
+        <div className="ag-skills">
+          <SiGodaddy className="skills-icon" />
           <span>GoDaddy</span>
         </div>
-        <div className="ag-service">
-          <FaAws className="service-icon" />
+        <div className="ag-skills">
+          <FaAws className="skills-icon" />
           <span>Amazon Web Services</span>
         </div>
       </div>
@@ -147,4 +147,4 @@ const Service = () => {
   );
 };
 
-export default Service;
+export default Skills;

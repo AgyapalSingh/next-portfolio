@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/AboutComponent/About";
-import Service from "./components/ServiceComponent/Service";
+import Skills from "./components/SkillsComponent/Skills";
 import Experience from "./components/ExperienceComponent/Experience";
 
 export default function Home() {
@@ -12,8 +12,8 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="service" className="section">
-        <Service />
+      <section id="skills" className="section">
+        <Skills />
       </section>
 
       <section id="experience" className="section">
