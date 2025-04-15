@@ -3,11 +3,13 @@ import Footer from "./components/Footer";
 import About from "./components/AboutComponent/About";
 import Skills from "./components/SkillsComponent/Skills";
 import Experience from "./components/ExperienceComponent/Experience";
+import Projects from "./components/ProjectComponent/Projects";
 
 export default function Home() {
   return (
     <>
       <Header />
+
       <section id="about" className="section">
         <About />
       </section>
@@ -21,11 +23,13 @@ export default function Home() {
       </section>
 
       <section id="projects" className="section">
-        Projects
+        <Projects />
       </section>
+
       <section id="contact" className="section">
         Contact
       </section>
+
       <Footer />
     </>
   );

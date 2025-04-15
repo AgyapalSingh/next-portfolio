@@ -740,3 +740,130 @@ nav {
     font-size: 0.8rem;
   }
 }
+
+/* PROJECTS */
+
+.ag-projects-container {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+}
+
+.ag-projects-title {
+  width: 30%;
+  position: sticky;
+  top: 150px;
+}
+
+.ag-projects-title div {
+  position: sticky;
+  top: 150px;
+}
+
+.ag-projects-title div h2 {
+  font-family: var(--font-montserrat);
+  text-transform: uppercase;
+  color: var(--tex-color-secondary);
+  font-size: 3rem;
+}
+
+.ag-projects-title div p {
+  font-family: var(--font-montserrat);
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 1rem;
+}
+
+.ag-projects-content {
+  width: 70%;
+  padding-right: 5px;
+  display: grid;
+  flex-direction: column;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 30px;
+  row-gap: 30px;
+}
+
+.ag-projects {
+  height: 70vh;
+  overflow: hidden;
+  border-radius: 20px;
+  border: 1px solid var(--hover-color);
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1536px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ag-projects-container {
+    flex-direction: column;
+  }
+  .ag-projects-title {
+    width: 100%;
+    position: sticky;
+    top: 120px;
+    background-color: var(--bg-color);
+    padding: 5px 0px 50px 5px;
+  }
+  .ag-projects-content {
+    width: 100%;
+  }
+  .ag-projects {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ag-projects-container {
+    flex-direction: column;
+  }
+  .ag-projects-title {
+    width: 100%;
+    position: sticky;
+    top: 120px;
+    background-color: var(--bg-color);
+    padding: 5px 0px 50px 5px;
+  }
+  .ag-projects div h2 {
+    font-size: 2rem;
+  }
+  .ag-projects-title div p {
+    font-size: 0.8rem;
+  }
+  .ag-projects-content {
+    width: 100%;
+  }
+  .ag-projects {
+    height: 50vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ag-projects-container {
+    flex-direction: column;
+  }
+  .ag-projects-title {
+    width: 100%;
+    position: sticky;
+    top: 120px;
+    background-color: var(--bg-color);
+    padding: 5px 0px 50px 5px;
+  }
+  .ag-projects-title div h2 {
+    font-size: 2rem;
+  }
+  .ag-projects-title div p {
+    font-size: 0.8rem;
+  }
+  .ag-projects-content {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .ag-projects {
+    height: 50vh;
+  }
+}
