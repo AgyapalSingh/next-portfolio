@@ -7,12 +7,13 @@ import { DiGoogleAnalytics } from "react-icons/di";
 import { SiMongodb, SiExpress } from "react-icons/si";
 import { VscGithubInverted } from "react-icons/vsc";
 import { FaGitAlt } from "react-icons/fa";
-import { FaHtml5 } from "react-icons/fa6";
+import { FaJsSquare } from "react-icons/fa";
 import { FaCss3 } from "react-icons/fa6";
 import { SiHostinger } from "react-icons/si";
 import { IoLogoVercel } from "react-icons/io5";
 import { SiGodaddy } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
+import { AiFillApi } from "react-icons/ai";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -82,19 +83,15 @@ const Skills = () => {
         </div>
 
         <div className="ag-skills">
+          <FaJsSquare className="skills-icon" />
+          <span>JavaScript</span>
+        </div>
+
+        <div className="ag-skills">
           <FaNodeJs className="skills-icon" />
           <span>Node.js</span>
         </div>
 
-        <div className="ag-skills">
-          <SiExpress className="skills-icon" />
-          <span>Express.js</span>
-        </div>
-
-        <div className="ag-skills">
-          <SiMongodb className="skills-icon" />
-          <span>MongoDB</span>
-        </div>
         <div className="ag-skills">
           <RiNextjsFill className="skills-icon" />
           <span>Next.js</span>
@@ -114,8 +111,13 @@ const Skills = () => {
         </div>
 
         <div className="ag-skills">
-          <DiGoogleAnalytics className="skills-icon" />
-          <span>Google Analytics</span>
+          <SiExpress className="skills-icon" />
+          <span>Express.js</span>
+        </div>
+
+        <div className="ag-skills">
+          <SiMongodb className="skills-icon" />
+          <span>MongoDB</span>
         </div>
 
         <div className="ag-skills">
@@ -126,6 +128,16 @@ const Skills = () => {
         <div className="ag-skills">
           <VscGithubInverted className="skills-icon" />
           <span>GitHub</span>
+        </div>
+
+        <div className="ag-skills">
+          <AiFillApi className="skills-icon" />
+          <span>APIs</span>
+        </div>
+
+        <div className="ag-skills">
+          <DiGoogleAnalytics className="skills-icon" />
+          <span>Google Analytics</span>
         </div>
 
         <div className="ag-skills">
