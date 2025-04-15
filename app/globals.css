@@ -753,6 +753,7 @@ nav {
   width: 30%;
   position: sticky;
   top: 150px;
+  z-index: 10;
 }
 
 .ag-projects-title div {
@@ -788,7 +789,6 @@ nav {
 .ag-projects {
   overflow: hidden;
   border-radius: 20px;
-  border: 1px solid var(--hover-color);
 }
 
 .ag-projects img{
