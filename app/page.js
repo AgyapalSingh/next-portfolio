@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import About from "./components/AboutComponent/About";
 import Service from "./components/ServiceComponent/Service";
+import Experience from "./components/ExperienceComponent/Experience";
 
 export default function Home() {
   return (
@@ -14,9 +15,11 @@ export default function Home() {
       <section id="service" className="section">
         <Service />
       </section>
+
       <section id="experience" className="section">
-        Experience
+        <Experience />
       </section>
+
       <section id="projects" className="section">
         Projects
       </section>
