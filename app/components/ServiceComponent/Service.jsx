@@ -28,9 +28,9 @@ const Service = () => {
       "(min-width: 769px)": function () {
         gsap.fromTo(
           icons,
-          { color: "var(--tex-color-secondary)" },
+          { color: "var(--hover-color)" },
           {
-            color: "var(--bg-color)",
+            color: "var(--text-color)",
             stagger: 0.1,
             scrollTrigger: {
               trigger: containerRef.current,
@@ -45,9 +45,9 @@ const Service = () => {
       "(max-width: 768px)": function () {
         gsap.fromTo(
           icons,
-          { color: "var(--tex-color-secondary)" },
+          { color: "var(--hover-color)" },
           {
-            color: "var(--bg-color)",
+            color: "var(--text-color)",
             stagger: 0.2,
             scrollTrigger: {
               trigger: containerRef.current,
@@ -70,58 +70,77 @@ const Service = () => {
       <div className="ag-all-services">
         <div className="ag-service">
           <AiOutlineHtml5 className="service-icon" />
+          <span>HTML</span>
         </div>
+
         <div className="ag-service">
           <FaCss3 className="service-icon" />
+          <span>CSS</span>
         </div>
+
         <div className="ag-service">
           <FaNodeJs className="service-icon" />
+          <span>Node.js</span>
         </div>
+
         <div className="ag-service">
           <SiExpress className="service-icon" />
+          <span>Express.js</span>
         </div>
 
         <div className="ag-service">
           <SiMongodb className="service-icon" />
+          <span>MongoDB</span>
         </div>
         <div className="ag-service">
           <RiNextjsFill className="service-icon" />
+          <span>Next.js</span>
         </div>
 
         <div className="ag-service">
           <FaReact className="service-icon" />
+          <span>React</span>
         </div>
         <div className="ag-service">
           <FaWordpress className="service-icon" />
+          <span>WordPress</span>
         </div>
         <div className="ag-service">
           <FaShopify className="service-icon" />
+          <span>Shopify</span>
         </div>
 
         <div className="ag-service">
           <DiGoogleAnalytics className="service-icon" />
-        </div>
-
-        <div className="ag-service">
-          <VscGithubInverted className="service-icon" />
+          <span>Google Analytics</span>
         </div>
 
         <div className="ag-service">
           <FaGitAlt className="service-icon" />
+          <span>Git</span>
+        </div>
+
+        <div className="ag-service">
+          <VscGithubInverted className="service-icon" />
+          <span>GitHub</span>
         </div>
 
         <div className="ag-service">
           <SiHostinger className="service-icon" />
+          <span>Hostinger</span>
         </div>
 
         <div className="ag-service">
           <IoLogoVercel className="service-icon" />
+          <span>Vercel</span>
         </div>
         <div className="ag-service">
           <SiGodaddy className="service-icon" />
+          <span>GoDaddy</span>
         </div>
         <div className="ag-service">
           <FaAws className="service-icon" />
+          <span>Amazon Web Services</span>
         </div>
       </div>
     </div>

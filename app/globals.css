@@ -1,3 +1,20 @@
+/* 
+@media screen and (min-width: 1281px) and (max-width: 1536px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+} 
+*/
+
 :root {
   --bg-color: #000000;
   --text-color: #ffffff;
@@ -414,14 +431,13 @@ nav {
 /* Services */
 
 .ag-service-container {
-  background-color: var(--text-color);
-  color: var(--bg-color);
+  background-color: var(--bg-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  height: 100vh;
   margin-top: 150px;
 }
 
@@ -433,36 +449,68 @@ nav {
   align-items: center;
   font-family: var(--font-montserrat);
   font-size: 3rem;
-  color: var(--tex-color-secondary);
+  color: var(--tex-color);
 }
 
 .ag-all-services {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  column-gap: 60px;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 30px;
   row-gap: 30px;
   width: 100%;
-  height: 100%;
   padding: 0 20px;
-  height: 80vh;
 }
 
 .ag-service {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--hover-color);
+  border-radius: 10px;
+  padding: 25px;
 }
 
 .service-icon {
   width: 100%;
-  height: 100%;
+  height: 100px;
+  margin-bottom: 10px;
 }
 
-@media screen and (max-width: 768px) {
+.ag-service span{
+  width: 100%;
+  font-family: var(--font-montserrat);
+  text-align: center;
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1536px) {
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
   .ag-all-services {
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    column-gap: 10px;
-    row-gap: 0px;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ag-all-services {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+
+  .ag-services-title {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ag-all-services {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
   }
 
   .ag-service {
@@ -476,13 +524,13 @@ nav {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   .ag-all-services {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    column-gap: 20px;
-    row-gap: 10px;
-    
-    
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ag-services-title {
+    font-size: 1rem;
+    padding: 0 5%;
   }
 }
