@@ -670,6 +670,12 @@ nav {
   font-size: 1rem;
 }
 
+
+.ag-experience-experience-details p span{
+  color: var(--text-color);
+  font-style: italic;
+}
+
 .ag-experience-experience-time-period {
   display: flex;
   justify-content: center;

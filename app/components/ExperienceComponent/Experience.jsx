@@ -51,9 +51,9 @@ const Experience = () => {
             <h1>Unimarck Pharma Ltd.</h1>
             <h2>Junior Web Developer</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione
-              vitae labore corrupti, atque aperiam consectetur unde eos tempora
-              nam quidem amet asperiores repellat incidunt veniam.
+              Experienced web developer proficient in managing live Shopify and WordPress websites, ensuring seamless
+              performance and user experience. <br />
+              Building a <span>Headless Shopify</span> solution with <span>React.js and GraphQL APIs.</span>  
             </p>
           </div>
           <div className="ag-experience-experience-time-period">
@@ -66,10 +66,8 @@ const Experience = () => {
             <h1>Echo Web Studio</h1>
             <h2>Junior Web Developer</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
-              neque consequuntur sapiente dignissimos, impedit reprehenderit
-              maxime molestiae repudiandae distinctio quasi sit. Tempora
-              possimus harum laborum?
+              Front-end development, crafting vuisually appealing and responsive websites. <br />
+              Collaboration with senior developers and designers to meet project requirements. <br />
             </p>
           </div>
           <div className="ag-experience-experience-time-period">
