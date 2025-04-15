@@ -11,11 +11,17 @@ const Projects = () => {
       </div>
 
       <div className="ag-projects-content">
-        <div className="ag-projects">a</div>
+        <div className="ag-projects">
+          <img src="Uniqaya-screen-Template.jpg" alt="" />
+        </div>
 
-        <div className="ag-projects">b</div>
+        <div className="ag-projects">
+          <img src="Uniqaya-screen-Template.jpg" alt="" />
+        </div>
 
-        <div className="ag-projects">c</div>
+        <div className="ag-projects">
+          <img src="Uniqaya-screen-Template.jpg" alt="" />
+        </div>
       </div>
     </div>
   );
