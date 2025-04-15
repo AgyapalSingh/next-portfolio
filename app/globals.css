@@ -572,7 +572,7 @@ nav {
   width: 70%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 80px;
 }
 
 .ag-experience-experience-logo {
@@ -583,7 +583,11 @@ nav {
 .ag-experience-experience-card {
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 60% 20%;
+  grid-template-columns: 70% 30%;
+}
+
+.ag-experience-experience-details{
+  padding: 0px 2px 0px 5px;
 }
 
 .ag-experience-experience-details h1 {
@@ -597,9 +601,10 @@ nav {
 .ag-experience-experience-details h2 {
   font-family: var(--font-montserrat);
   letter-spacing: 1px;
-  color: var(--text-color);
+  color: var(--tex-color-secondary);
   margin-bottom: 20px;
   font-size: 1.2rem;
+  text-transform: uppercase;
 }
 
 .ag-experience-experience-details p {
@@ -611,8 +616,8 @@ nav {
 
 .ag-experience-experience-time-period {
   display: flex;
-  justify-content: end;
-  font-family: var(--font-poppins);
+  justify-content: center;
+  font-family: var(--font-montserrat);
   color: var(--text-color);
   font-size: 14px;
 }
@@ -627,7 +632,7 @@ nav {
     top: 120px;
     background-color: var(--bg-color);
     padding: 15px 5px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
 
   .ag-experience-content {
@@ -645,8 +650,17 @@ nav {
     top: 120px;
     background-color: var(--bg-color);
     padding: 15px 5px;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
   }
+
+  .ag-experience-title div h2 {
+    font-size: 2rem;
+  }
+
+  .ag-experience-title div p {
+    font-size: 0.8rem;
+  }
+
   .ag-experience-content {
     width: 100%;
   }
@@ -664,7 +678,23 @@ nav {
     padding: 15px 5px;
     margin-bottom: 30px;
   }
+
+  .ag-experience-title div h2 {
+    font-size: 2rem;
+  }
+
+  .ag-experience-title div p {
+    font-size: 0.8rem;
+  }
   .ag-experience-content {
     width: 100%;
+  }
+
+  .ag-experience-experience-details h1 {
+    font-size: 1.5rem;
+  }
+  
+  .ag-experience-experience-details h2 {
+    font-size: 0.8rem;
   }
 }

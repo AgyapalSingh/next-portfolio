@@ -12,10 +12,8 @@ const Experience = () => {
 
       <div className="ag-experience-content">
         <div className="ag-experience-experience-card">
-          <div className="ag-experience-experience-logo">A</div>
-
           <div className="ag-experience-experience-details">
-          <h1>Unimarck Pharma Ltd.</h1>
+            <h1>Unimarck Pharma Ltd.</h1>
             <h2>Junior Web Developer</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -26,14 +24,11 @@ const Experience = () => {
           </div>
 
           <div className="ag-experience-experience-time-period">
-            [July, 2024 - Present]
+            [ July, 2024 - Present ]
           </div>
         </div>
 
-
         <div className="ag-experience-experience-card">
-          <div className="ag-experience-experience-logo">A</div>
-
           <div className="ag-experience-experience-details">
             <h1>Echo Web studio</h1>
             <h2>Junior Web Developer</h2>
@@ -46,7 +41,7 @@ const Experience = () => {
           </div>
 
           <div className="ag-experience-experience-time-period">
-            [July, 2024 - Present]
+            [ Sep, 2023 - June, 24 ]
           </div>
         </div>
       </div>
