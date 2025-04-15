@@ -11,7 +11,7 @@ const Projects = () => {
   useEffect(() => {
     imagesRef.current.forEach((img, index) => {
       gsap.from(img, {
-        y: 100,
+        y: 150,
         opacity: 0,
         duration: 1,
         ease: "power3.out",

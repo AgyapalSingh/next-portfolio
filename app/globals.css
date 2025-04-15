@@ -166,6 +166,10 @@ button:hover {
   }
 }
 
+footer{
+  height: 100vh;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -544,7 +548,7 @@ nav {
     padding: 5px 0px 50px 5px;
   }
 
-  .ag-skills div h2 {
+  .ag-skills-title div h2 {
     font-size: 2rem;
   }
 
@@ -571,7 +575,7 @@ nav {
     padding: 5px 0px 50px 5px;
   }
 
-  .ag-skills div h2 {
+  .ag-skills-title div h2 {
     font-size: 2rem;
   }
 
@@ -753,7 +757,7 @@ nav {
   width: 30%;
   position: sticky;
   top: 150px;
-  z-index: 10;
+  /* z-index: 10; */
 }
 
 .ag-projects-title div {
@@ -830,7 +834,7 @@ nav {
     background-color: var(--bg-color);
     padding: 5px 0px 50px 5px;
   }
-  .ag-projects div h2 {
+  .ag-projects-title div h2 {
     font-size: 2rem;
   }
   .ag-projects-title div p {
