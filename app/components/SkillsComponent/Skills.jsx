@@ -157,6 +157,16 @@ const Skills = () => {
           <FaAws className="skills-icon" />
           <span>Amazon Web Services</span>
         </div>
+
+        <div className="ag-skills">
+          <img className="gsap-icon" src="GSAP.svg" />
+          <span>GSAP</span>
+        </div>
+
+        <div className="ag-skills">
+          <img className="gsap-icon" src="Framer.svg" />
+          <span>Framer</span>
+        </div>
       </div>
     </div>
   );
