@@ -64,7 +64,10 @@ const Skills = () => {
   return (
     <div className="ag-skills-container" ref={containerRef}>
       <div className="ag-skills-title">
-        <h1>What I think we knows !</h1>
+        <div>
+          <h2>Skills</h2>
+          <p>Showcasing my skills</p>
+        </div>
       </div>
 
       <div className="ag-all-skills">
