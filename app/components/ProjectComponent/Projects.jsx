@@ -12,15 +12,15 @@ const Projects = () => {
 
       <div className="ag-projects-content">
         <div className="ag-projects">
-          <img src="Uniqaya-screen-Template.jpg" alt="" />
+          <img src="Uniqaya-Screen-Template.jpg" alt="Project 1" />
         </div>
 
         <div className="ag-projects">
-          <img src="Uniqaya-screen-Template.jpg" alt="" />
+          <img src="Uniqaya-Screen-Template.jpg" alt="Project 2" />
         </div>
 
         <div className="ag-projects">
-          <img src="Uniqaya-screen-Template.jpg" alt="" />
+          <img src="Uniqaya-Screen-Template.jpg" alt="Project 3" />
         </div>
       </div>
     </div>
