@@ -13,6 +13,7 @@ const Projects = () => {
       gsap.from(img, {
         y: 150,
         opacity: 0,
+        scale: 0.8,
         duration: 1,
         ease: "power3.out",
         scrollTrigger: {
