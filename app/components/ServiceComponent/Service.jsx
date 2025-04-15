@@ -51,10 +51,9 @@ const Service = () => {
             stagger: 0.2,
             scrollTrigger: {
               trigger: containerRef.current,
-              start: "top 50%",
-              end: "top -200%",
+              start: "top 60%",
+              end: "top -130%",
               scrub: true,
-              markers: true
             },
           }
         );
