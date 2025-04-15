@@ -41,7 +41,7 @@ const Navbar = () => {
     const section = document.getElementById(id);
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - 50,
+        top: section.offsetTop - 130,
         behavior: "smooth",
       });
     }
