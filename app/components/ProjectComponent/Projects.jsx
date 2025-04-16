@@ -26,9 +26,9 @@ const Projects = () => {
   }, []);
 
   const projectImages = [
-    { src: "Uniqaya-mockup.jpg", alt: "Uniqaya Project" },
-    { src: "Uniqaya-mockup.jpg", alt: "Another Project" },
-    { src: "Uniqaya-mockup.jpg", alt: "Creative Work" },
+    { src: "Uniqaya_WebP.webp", alt: "Uniqaya Project" },
+    { src: "Uniqaya_WebP.webp", alt: "Another Project" },
+    { src: "Uniqaya_WebP.webp", alt: "Creative Work" },
   ];
 
   return (

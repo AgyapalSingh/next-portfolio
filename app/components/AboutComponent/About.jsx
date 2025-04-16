@@ -119,7 +119,7 @@ const About = () => {
 
       <div className="ag-about-info">
         <div className="ag-about-info-img" ref={imagedivRef}>
-          <img src="Hero-Banner-Code.jpeg" ref={imageRef} alt="" />
+          <img src="HeroBanner_WebP.webp" ref={imageRef} alt="" />
         </div>
 
         <div className="ag-about-info-text">
