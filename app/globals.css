@@ -964,6 +964,7 @@ footer {
 
 .ag-footer-addres-info{
   font-size: 2rem;
+  margin-bottom: 30px;
 }
 
 .ag-footer-addres-info div a{
@@ -975,6 +976,13 @@ footer {
   color: var(--text-color);
   text-decoration: none;
   font-family: var(--font-poppins);
+}
+
+
+.ag-footer-addres-info div a span{
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {

@@ -4,7 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { MdPhone } from "react-icons/md";
-import CopyRight from "./HeaderComponents/CopyRight";
+import { MdArrowOutward } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -43,21 +43,27 @@ const Footer = () => {
                 rel="noopener noreferrer"
               >
                 <FaLocationDot />
-                <span>Mohali, Punjab</span>
+                <span>
+                  Mohali, Punjab <MdArrowOutward />
+                </span>
               </a>
             </div>
 
             <div>
               <a href="mailto:agyapalsinghaujla@gmail.com">
                 <MdEmail />
-                <span>Mail</span>
+                <span>
+                  Mail <MdArrowOutward />
+                </span>
               </a>
             </div>
 
             <div>
               <a href="tel:+919877500750">
                 <MdPhone />
-                <span>Call Us</span>
+                <span>
+                  Call Us <MdArrowOutward />
+                </span>
               </a>
             </div>
           </div>
