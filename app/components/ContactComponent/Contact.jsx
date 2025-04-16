@@ -1,8 +1,44 @@
-import React from "react";
+'use client'
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.from(".ag-contact-form form", {
+        opacity: 0,
+        y: 50,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".ag-contact-form",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      gsap.from(".ag-contact-form input, .ag-contact-form textarea, .ag-contact-form button", {
+        opacity: 0,
+        y: 30,
+        stagger: 0.5,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".ag-contact-form",
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      });
+    }, containerRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className="ag-contact-container">
+    <div className="ag-contact-container" ref={containerRef}>
       <div className="ag-contact-title">
         <div>
           <h2>Contact</h2>
@@ -25,9 +61,9 @@ const Contact = () => {
               placeholder="Tell me your requirement"
               required
             />
-            <div >
+            <div>
               <p>*Text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, minus!</p>
-              <button>Send</button>
+              <button type="submit">Send</button>
             </div>
           </form>
         </div>
