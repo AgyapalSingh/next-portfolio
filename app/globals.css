@@ -1211,7 +1211,7 @@ form div p{
   }
 
   form div{
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
   }
   
@@ -1246,7 +1246,7 @@ form div p{
   }
 
   form div{
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 20px;
   }
 } 

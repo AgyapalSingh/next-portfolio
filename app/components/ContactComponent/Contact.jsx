@@ -133,6 +133,7 @@ const Contact = () => {
               required
             />
             <div>
+              <button type="submit">Send</button>
               {formResponse && (
                 <p
                   className="ag-formResponse-message"
@@ -141,7 +142,6 @@ const Contact = () => {
                   {formResponse}
                 </p>
               )}
-              <button type="submit">Send</button>
             </div>
           </form>
         </div>
