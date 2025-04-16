@@ -1215,6 +1215,9 @@ form div p{
     gap: 20px;
   }
   
+  form div button{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -1248,5 +1251,9 @@ form div p{
   form div{
     flex-direction: column;
     gap: 20px;
+  }
+
+  form div button{
+    width: 100%;
   }
 } 
