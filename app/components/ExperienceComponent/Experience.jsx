@@ -90,7 +90,7 @@ const Experience = () => {
             </p>
           </div>
           <div className="ag-experience-experience-time-period">
-            [ Jan, 2023 - May, 24 ]
+            [ Jan, 2023 - May, 23 ]
           </div>
         </div>
       </div>
