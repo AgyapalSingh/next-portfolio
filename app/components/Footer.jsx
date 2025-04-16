@@ -51,7 +51,7 @@ const Footer = () => {
             </div>
 
             <div>
-              <a href="tel:+4733378901">
+              <a href="tel:+919877500750">
                 <MdPhone />
                 <span>Call Us</span>
               </a>
