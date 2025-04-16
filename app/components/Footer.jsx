@@ -1,6 +1,10 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
+import { FaLocationDot } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
+import { MdPhone } from "react-icons/md";
+import CopyRight from "./HeaderComponents/CopyRight";
 
 const Footer = () => {
   return (
@@ -30,7 +34,34 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="ag-footer-right"></div>
+        <div className="ag-footer-right">
+          <div className="ag-footer-addres-info">
+            <div>
+              <a href="">
+                <FaLocationDot />
+                <span>Mohali, Punjab</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="mailto:agyapalsinghaujla@gmail.com">
+                <MdEmail />
+                <span>Mail</span>
+              </a>
+            </div>
+
+            <div>
+              <a href="tel:+4733378901">
+                <MdPhone />
+                <span>Call Us</span>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <CopyRight/>
+          </div>
+        </div>
       </div>
     </footer>
   );
