@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div></div>
+        <div className="ag-footer-right"></div>
       </div>
     </footer>
   );
