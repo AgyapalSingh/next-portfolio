@@ -20,17 +20,19 @@ const Footer = () => {
             experiences that truly reflect your vision."
           </p>
           <div className="ag-footer-social-link">
-            <div>
+            <a
+              href="https://www.linkedin.com/in/agyapal-singh-020983241/"
+              target="_blank"
+            >
               <FaLinkedin />
-            </div>
-
-            <div>
+            </a>
+            <a href="https://github.com/AgyapalSingh" target="_blank">
               <FaGithub />
-            </div>
+            </a>
 
-            <div>
+            <a href="https://www.instagram.com/agya_aujla/" target="_blank">
               <AiFillInstagram />
-            </div>
+            </a>
           </div>
         </div>
 
