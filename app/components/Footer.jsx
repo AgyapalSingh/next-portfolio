@@ -53,7 +53,7 @@ const Footer = () => {
               <a href="mailto:agyapalsinghaujla@gmail.com">
                 <MdEmail />
                 <span>
-                  Mail <MdArrowOutward />
+                  Ping Me <MdArrowOutward />
                 </span>
               </a>
             </div>
@@ -62,7 +62,7 @@ const Footer = () => {
               <a href="tel:+919877500750">
                 <MdPhone />
                 <span>
-                  Call Us <MdArrowOutward />
+                  Let's Talk <MdArrowOutward />
                 </span>
               </a>
             </div>
