@@ -37,7 +37,11 @@ const Footer = () => {
         <div className="ag-footer-right">
           <div className="ag-footer-addres-info">
             <div>
-              <a href="">
+              <a
+                href="https://www.google.com/maps?q=Mohali,+Punjab"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaLocationDot />
                 <span>Mohali, Punjab</span>
               </a>
@@ -57,7 +61,6 @@ const Footer = () => {
               </a>
             </div>
           </div>
-
         </div>
       </div>
     </footer>
