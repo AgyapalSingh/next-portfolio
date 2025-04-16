@@ -47,6 +47,7 @@ const Projects = () => {
               src={project.src}
               alt={project.alt}
               ref={(el) => (imagesRef.current[index] = el)}
+              loading="lazy"
             />
           </div>
         ))}

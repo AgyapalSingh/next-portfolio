@@ -165,6 +165,7 @@ const Skills = () => {
             src="GSAP.svg"
             height="100px"
             width="100px"
+            loading="lazy"
           />
           <span>GSAP</span>
         </div>
@@ -176,6 +177,7 @@ const Skills = () => {
             src="Framer.svg"
             height="100px"
             width="100px"
+            loading="lazy"
           />
           <span>Framer</span>
         </div>
