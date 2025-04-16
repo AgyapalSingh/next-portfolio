@@ -5,6 +5,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { MdPhone } from "react-icons/md";
 import { MdArrowOutward } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 const Footer = () => {
   return (
@@ -32,6 +33,10 @@ const Footer = () => {
 
             <a href="https://www.instagram.com/agya_aujla/" target="_blank">
               <AiFillInstagram />
+            </a>
+
+            <a href="https://wa.me/919877500750?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20services" target="_blank">
+              <IoLogoWhatsapp />
             </a>
           </div>
         </div>
