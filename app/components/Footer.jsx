@@ -58,9 +58,6 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
-            <CopyRight/>
-          </div>
         </div>
       </div>
     </footer>
