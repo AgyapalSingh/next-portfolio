@@ -4,6 +4,7 @@ import About from "./components/AboutComponent/About";
 import Skills from "./components/SkillsComponent/Skills";
 import Experience from "./components/ExperienceComponent/Experience";
 import Projects from "./components/ProjectComponent/Projects";
+import Contact from "./components/ContactComponent/Contact";
 
 export default function Home() {
   return (
@@ -27,7 +28,7 @@ export default function Home() {
       </section>
 
       <section id="contact" className="section">
-        Contact
+        <Contact />
       </section>
 
       <Footer />
