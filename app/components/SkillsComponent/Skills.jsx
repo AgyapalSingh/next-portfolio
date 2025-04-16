@@ -159,12 +159,12 @@ const Skills = () => {
         </div>
 
         <div className="ag-skills">
-          <img className="gsap-icon" src="GSAP.svg" />
+          <img className="gsap-icon" alt="gsap-logo" src="GSAP.svg" />
           <span>GSAP</span>
         </div>
 
         <div className="ag-skills">
-          <img className="gsap-icon" src="Framer.svg" />
+          <img className="gsap-icon" alt="framer-logo" src="Framer.svg" />
           <span>Framer</span>
         </div>
       </div>

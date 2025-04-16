@@ -66,7 +66,7 @@ const Experience = () => {
             <h1>Echo Web Studio</h1>
             <h2>Junior Web Developer</h2>
             <p>
-              Front-end development, crafting vuisually appealing and responsive websites. <br />
+              Front-end development, crafting viusually appealing and responsive websites. <br />
               Collaboration with senior developers and designers to meet project requirements. <br />
             </p>
           </div>

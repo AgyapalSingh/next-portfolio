@@ -24,18 +24,31 @@ const Footer = () => {
             <a
               href="https://www.linkedin.com/in/agyapal-singh-020983241/"
               target="_blank"
+              aria-label="LinkedIn Profile - Agyapal Singh"
             >
               <FaLinkedin />
             </a>
-            <a href="https://github.com/AgyapalSingh" target="_blank">
+            <a
+              href="https://github.com/AgyapalSingh"
+              target="_blank"
+              aria-label="GitHub Profile - Agyapal Singh"
+            >
               <FaGithub />
             </a>
 
-            <a href="https://www.instagram.com/agya_aujla/" target="_blank">
+            <a
+              href="https://www.instagram.com/agya_aujla/"
+              target="_blank"
+              aria-label="Instagram Profile - Agyapal Singh"
+            >
               <AiFillInstagram />
             </a>
 
-            <a href="https://wa.me/919877500750?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20services" target="_blank">
+            <a
+              href="https://wa.me/919877500750?text=Hi%2C%20I%20want%20to%20know%20more%20about%20your%20services"
+              target="_blank"
+              aria-label="Whatsapp - Agyapal Singh"
+            >
               <IoLogoWhatsapp />
             </a>
           </div>
