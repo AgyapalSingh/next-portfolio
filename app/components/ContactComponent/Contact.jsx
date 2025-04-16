@@ -26,7 +26,7 @@ const Contact = () => {
               required
             />
             <div >
-              <p>Text</p>
+              <p>*Text Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, minus!</p>
               <button>Send</button>
             </div>
           </form>
