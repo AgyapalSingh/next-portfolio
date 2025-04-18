@@ -19,6 +19,7 @@ const About = () => {
         { x: "-100%", opacity: 0 },
         {
           x: "0%",
+          delay: 4,
           opacity: 1,
           duration: 1.5,
           stagger: 0.3,

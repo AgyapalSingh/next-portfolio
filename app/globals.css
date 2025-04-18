@@ -422,7 +422,7 @@ nav {
   font-size: 18px;
 }
 
-@media screen and  (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
   .ag-about-text h1 {
     font-size: 8rem;
   }
@@ -816,6 +816,7 @@ nav {
 .ag-projects-content {
   width: 70%;
   padding-right: 5px;
+  padding-left: 5px;
   display: grid;
   flex-direction: column;
   grid-template-columns: repeat(2, 1fr);
@@ -1056,9 +1057,6 @@ footer {
   }
 }
 
-
-
-
 /* Contact Component */
 
 .ag-contact-container {
@@ -1097,19 +1095,20 @@ footer {
 .ag-contact-content {
   width: 70%;
   padding-right: 5px;
+  padding-left: 5px;
 }
 
-.ag-contact-form{
+.ag-contact-form {
   height: 700px;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   gap: 50px;
 }
 
-form input{
+form input {
   height: 100px;
   background-color: var(--bg-gradient);
   outline: none;
@@ -1122,7 +1121,7 @@ form input{
   font-style: italic;
 }
 
-form textarea{
+form textarea {
   height: 300px;
   background-color: var(--bg-gradient);
   outline: none;
@@ -1135,15 +1134,15 @@ form textarea{
   font-style: italic;
 }
 
-form div{
+form div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding:0px  20px;
+  padding: 0px 20px;
 }
 
-form div button{
+form div button {
   height: 100px;
   border: none;
   outline: none;
@@ -1157,7 +1156,7 @@ form div button{
   text-transform: uppercase;
 }
 
-form div p{
+form div p {
   font-family: var(--font-poppins);
   color: var(--danger-color);
   text-align: left;
@@ -1207,20 +1206,20 @@ form div p{
     width: 100%;
   }
 
-  form input{
-    font-size: 2rem;
-  }
-  
-  form textarea{
+  form input {
     font-size: 2rem;
   }
 
-  form div{
+  form textarea {
+    font-size: 2rem;
+  }
+
+  form div {
     flex-direction: column;
     gap: 20px;
   }
-  
-  form div button{
+
+  form div button {
     width: 100%;
   }
 }
@@ -1245,20 +1244,80 @@ form div p{
   .ag-contact-content {
     width: 100%;
   }
-  form input{
-    font-size: 1.5rem;
-  }
-  
-  form textarea{
+  form input {
     font-size: 1.5rem;
   }
 
-  form div{
+  form textarea {
+    font-size: 1.5rem;
+  }
+
+  form div {
     flex-direction: column;
     gap: 20px;
   }
 
-  form div button{
+  form div button {
     width: 100%;
   }
-} 
+}
+
+/* INtro Loader */
+
+.ag-intro-loader-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.ag-intro-left-door,
+.ag-intro-right-door {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  z-index: 2;
+}
+
+.ag-intro-left-door {
+  left: 0;
+  background-color: var(--hover-color);
+}
+
+.ag-intro-right-door {
+  right: 0;
+  background-color: var(--tex-color-secondary);
+}
+
+.ag-intro-logo {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ag-intro-logo h1 {
+  font-size: 5rem;
+  font-family: var(--font-montserrat);
+}
+
+.ag-main-content {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease;
+}
+
+.ag-main-content.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.ag-main-content.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
