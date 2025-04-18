@@ -18,12 +18,7 @@ const IntroLoader = ({ onFinish }) => {
       },
     });
 
-    tl.fromTo(
-      logoRef.current,
-      { opacity: 0, scale: 0.8 },
-      { opacity: 1, scale: 1, duration: 1, ease: "power2.out" }
-    )
-      .to(
+    tl.to(
         leftDoorRef.current,
         { x: "-100%", duration: 1.5, ease: "power3.inOut" },
         "+=0.5"
@@ -32,6 +27,10 @@ const IntroLoader = ({ onFinish }) => {
         rightDoorRef.current,
         { x: "100%", duration: 1.5, ease: "power3.inOut" },
         "<"
+      ).fromTo(
+        logoRef.current,
+        { opacity: 0, scale: 0.5 },
+        { opacity: 1, scale: 1, duration: 1, ease: "power2.out" }
       )
       .to(containerRef.current, {
         opacity: 0,
