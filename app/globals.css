@@ -221,6 +221,7 @@ nav {
   list-style: none;
   display: flex;
   height: 60%;
+  gap: 40px;
 }
 
 .ag-nav-links li {
@@ -237,8 +238,9 @@ nav {
   transition: color 0.3s ease;
   font-family: var(--font-montserrat);
   height: 100%;
-  padding: 0px 30px;
-  font-weight: bold;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .ag-nav-links button:hover,
