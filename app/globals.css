@@ -835,6 +835,7 @@ nav {
 
 .ag-projects {
   overflow: hidden;
+  position: relative;
 }
 
 .ag-projects img {
@@ -842,6 +843,28 @@ nav {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+  filter: blur(2px);
+  -webkit-filter: blur(1px);
+}
+
+.ag-projects-link-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-decoration: none;
+  width: 140px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 2px;
+  padding-right: 2px;
+  align-items: center;
+  font-family: var(--font-montserrat);
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1536px) {

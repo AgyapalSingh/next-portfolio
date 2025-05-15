@@ -2,14 +2,35 @@
 import React, { useEffect, useRef, useCallback } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaLink } from "react-icons/fa6";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const projectImages = [
-  { src: "/projects/CalledtoSurf.png", alt: "Called to Surf Project" },
-  { src: "/projects/vixenAndFox.png", alt: "Vixen and Fox Project" },
-  { src: "/projects/UniqayaLifeStyles.png", alt: "Uniqaya LifeStyles Project" },
-  { src: "/projects/ClaretWorld.png", alt: "Claret World – Coming Soon" },
+  {
+    src: "/projects/UniqayaLifeStyles.png",
+    alt: "Uniqaya LifeStyles Project",
+    link: "https://uniqaya.com/",
+    btnText: "Live Preview",
+  },
+  {
+    src: "/projects/CalledtoSurf.png",
+    alt: "Called to Surf Project",
+    link: "https://calledtosurf.com/",
+    btnText: "Live Preview",
+  },
+  {
+    src: "/projects/vixenAndFox.png",
+    alt: "Vixen and Fox Project",
+    link: "https://vixenandfox.com.au/",
+    btnText: "Live Preview",
+  },
+  {
+    src: "/projects/ClaretWorld.png",
+    alt: "Claret World – Coming Soon",
+    link: "#",
+    btnText: "Coming Soon",
+  },
 ];
 
 const Projects = () => {
@@ -58,6 +79,10 @@ const Projects = () => {
               ref={(el) => setImageRef(el, index)}
               loading="lazy"
             />
+
+            <a className="ag-projects-link-btn"  href={project.link} target="_blank" rel="noopener noreferrer">
+              {project.btnText} <FaLink />
+            </a>
           </div>
         ))}
       </div>
