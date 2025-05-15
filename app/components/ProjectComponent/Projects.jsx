@@ -34,22 +34,22 @@ const projectImages = [
 ];
 
 const Projects = () => {
-  const imagesRef = useRef([]);
+  const cardsRef = useRef([]);
 
-  const setImageRef = useCallback((el, index) => {
-    if (el) imagesRef.current[index] = el;
+  const setCardRef = useCallback((el, index) => {
+    if (el) cardsRef.current[index] = el;
   }, []);
 
   useEffect(() => {
-    const animations = imagesRef.current.map((img) =>
-      gsap.from(img, {
+    const animations = cardsRef.current.map((card) =>
+      gsap.from(card, {
         y: 150,
         opacity: 0,
         scale: 0.8,
         duration: 1,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: img,
+          trigger: card,
           start: "top 80%",
           toggleActions: "play none none reverse",
         },
@@ -73,18 +73,26 @@ const Projects = () => {
       <div className="ag-projects-content">
         {projectImages.map((project, index) => (
           <div className="ag-projects" key={index}>
-            <img
-              src={project.src}
-              alt={project.alt}
-              ref={(el) => setImageRef(el, index)}
-              loading="lazy"
-            />
+            <div
+              className="ag-projects-inner"
+              ref={(el) => setCardRef(el, index)}
+              style={{ position: "relative" }}
+            >
+              <img src={project.src} alt={project.alt} loading="lazy" />
 
-            <a className="ag-projects-link-btn"  href={project.link} target="_blank" rel="noopener noreferrer">
-              {project.btnText} <FaLink />
-            </a>
+              <a
+                className="ag-projects-link-btn"
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {project.btnText} <FaLink style={{ marginLeft: "6px" }} />
+              </a>
+            </div>
           </div>
         ))}
+
+        <p className="ag-projects-more-text">And many more.....</p>
       </div>
     </div>
   );

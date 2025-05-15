@@ -847,7 +847,7 @@ nav {
   -webkit-filter: blur(1px);
 }
 
-.ag-projects-link-btn{
+.ag-projects-link-btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -865,6 +865,18 @@ nav {
   font-family: var(--font-montserrat);
   border-radius: 5px;
   font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.ag-projects-link-btn:hover {
+  opacity: 0.9;
+  transform: translate(-50%, -50%) scale(1.05);
+}
+
+.ag-projects-more-text {
+  font-family: var(--font-poppins);
+  font-size: 14px;
+  color: var(--text-color);
 }
 
 @media screen and (min-width: 1281px) and (max-width: 1536px) {
@@ -932,6 +944,12 @@ nav {
   .ag-projects-content {
     width: 100%;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ag-projects-link-btn {
+    width: 120px;
+    height: 30px;
+    font-size: 12px;
   }
 }
 
@@ -1341,7 +1359,7 @@ form div p {
   font-family: var(--font-montserrat);
 }
 
-.ag-intro-logo-title{
+.ag-intro-logo-title {
   font-size: 3rem;
   font-family: var(--font-montserrat);
 }
