@@ -26,10 +26,10 @@ const projectImages = [
     btnText: "Live Preview",
   },
   {
-    src: "/projects/ClaretWorld.png",
-    alt: "Claret World – Coming Soon",
-    link: "#",
-    btnText: "Coming Soon",
+    src: "/projects/Claret-Home.png",
+    alt: "Claret World ",
+    link: "https://claretworld.com/",
+    btnText: "Live Preview",
   },
 ];
 
