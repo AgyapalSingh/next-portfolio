@@ -49,7 +49,7 @@ const Experience = () => {
         <div className="ag-experience-experience-card">
           <div className="ag-experience-experience-details">
             <h1>Unimarck Pharma Ltd.</h1>
-            <h2>Junior Web Developer</h2>
+            <h2>Senior Web Developer</h2>
             <p>
               Experienced web developer proficient in managing live Shopify and
               WordPress websites, ensuring seamless performance and user
